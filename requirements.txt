@@ -1,0 +1,22 @@
+# Núcleo de datos (notebook S18_VENTAS_HIPERMERCADOS_MEJORADO)
+numpy==2.4.4
+pandas==3.0.2
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2026.1
+
+# Visualización y estadística
+matplotlib==3.10.8
+seaborn==0.13.2
+plotly==6.1.2
+scipy==1.15.3
+
+# Modelado predictivo (import: sklearn)
+scikit-learn>=1.5.0
+
+# Exportación Excel (.xlsx) desde pandas
+openpyxl==3.1.5
+
+# Ejecución del notebook (Jupyter + kernel)
+notebook==7.3.2
+ipykernel==6.29.5

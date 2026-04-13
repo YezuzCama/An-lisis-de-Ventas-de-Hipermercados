@@ -1,0 +1,5 @@
+fecha_analisis: 2026-04-12 18:47:36
+registros_totales: 9800
+columnas: 19
+periodo: 2015-01-02 00:00:00 a 2018-12-11 00:00:00
+completitud: 93.64%
