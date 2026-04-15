@@ -70,6 +70,3 @@ Si el archivo no se encuentra en la ruta indicada, revisa el mensaje de error en
 - Objetivos: patrones de ventas, productos destacados, tendencias temporales, regiones y categorías, outliers, correlaciones e insights para decisiones.
 - Herramientas: Pandas/NumPy, visualizaciones estáticas (Matplotlib/Seaborn) e interactivas (Plotly), estadística con SciPy.
 
-## Licencia y uso académico
-
-Si este trabajo forma parte de un curso o entrega, respeta las normas de citación y uso de datos de tu institución.
