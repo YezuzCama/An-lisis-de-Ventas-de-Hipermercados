@@ -1,9 +1,51 @@
-# Análisis de ventas de hipermercados
+# 📊 Predecir Ventas con Python (Análisis de Hipermercados)
 
-Proyecto de análisis exploratorio y estadístico sobre datos de ventas de hipermercados. Incluye limpieza, calidad de datos, detección de outliers, visualizaciones y conclusiones orientadas a inventario y estrategia comercial.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data_Analysis-💡-blue?style=for-the-badge)
 
-**Autor:** Jesús Gustavo Camacho Olivos  
-**Versión principal del análisis:** 2.0 (notebook mejorado, abril 2026)
+## 📌 Título del Proyecto
+**Predecir ventas con Python** — Un enfoque predictivo y humano para entender el comportamiento comercial en hipermercados.
+
+---
+
+## 🎯 Desafío (El Problema)
+El proyecto aborda la falta de visibilidad detallada sobre el rendimiento comercial y las fluctuaciones de la demanda. Específicamente, se buscaba resolver:
+* **Falta de optimización de stock:** Ineficiencia en el control de inventarios debido al desconocimiento de patrones de compra[cite: 3].
+* **Incertidumbre comercial:** Dificultad para anticipar tendencias temporales y estacionalidad en las ventas[cite: 3].
+* **Decisiones intuitivas:** Necesidad de transformar datos crudos en insights accionables para sustituir las corazonadas por decisiones basadas en evidencia estadística[cite: 3].
+
+---
+
+## ⚙️ Proceso (El Enfoque Técnico)
+
+El problema se abordó mediante un flujo de trabajo riguroso de Ciencia de Datos estructurado en las siguientes fases:
+
+### 1. Stack Tecnológico
+* **Manipulación de Datos:** `Pandas` (v3.0.2) y `NumPy` (v2.4.4)[cite: 3].
+* **Análisis Estadístico:** `SciPy` (módulo `stats`)[cite: 3].
+* **Visualización:** `Matplotlib`, `Seaborn` y `Plotly` para gráficos interactivos[cite: 3].
+
+### 2. Pipeline de Desarrollo
+* **Limpieza y Robustez:** Se corrigieron imports incompletos, se parametrizó la ruta del archivo CSV para asegurar la portabilidad del código y se implementó un manejo de excepciones exhaustivo para evitar fallos en la ejecución[cite: 3].
+* **Calidad del Dato:** Tratamiento de valores nulos mediante la imputación con la mediana para variables numéricas (evitando el sesgo de outliers) y la moda para variables categóricas[cite: 3].
+* **Tratamiento de Outliers:** Identificación de valores atípicos mediante el método del Rango Intercuartílico ($IQR$)[cite: 3].
+* **Ingeniería de Características:** Creación de variables dinámicas como `categoria_ventas` basadas en cuartiles para segmentar el rendimiento de los productos[cite: 3].
+
+---
+
+## 🚀 Resultado e Impacto
+
+### 📈 Hallazgos Técnicos y de Negocio
+* **Comportamiento de las Ventas:** La distribución de la variable `Sales` presenta un marcado sesgo positivo (asimetría de $12.98$ y curtosis de $304.29$), indicando que la gran mayoría de las transacciones son de bajo valor, pero existen compras de gran volumen que representan picos críticos de ingresos[cite: 3].
+* **Valores Atípicos:** Se detectaron $1,145$ outliers en las ventas (equivalentes al $11.68\%$ del dataset)[cite: 3]. Estos no son errores de medición, sino eventos de alta demanda comercial que requieren estrategias de distribución diferenciadas[cite: 3].
+* **Eficiencia del Código:** Mediante la conversión inteligente de tipos de datos a variables categóricas, se logró una **optimización de memoria del 82.49%** (reduciendo el dataset de $8.84\text{ MB}$ a solo $1.55\text{ MB}$), asegurando la escalabilidad del script para datasets más grandes[cite: 3].
+
+### 💡 Lecciones Aprendidas
+> El análisis de datos no consiste en eliminar lo que "rompe la norma". La detección del $11.68\%$ de outliers demostró que los comportamientos atípicos contienen el verdadero valor estratégico para la toma de decisiones del negocio[cite: 3].
+
+---
+Autores: **Jesus Gustavo Camacho Olivos** • Abril 2026[cite: 3]
 
 ## Contenido del repositorio
 
